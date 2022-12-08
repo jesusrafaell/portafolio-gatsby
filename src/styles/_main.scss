@@ -20,7 +20,7 @@
 	}
 
 	.cols1 {
-		@apply flex items-start flex-col;
+		@apply flex flex-col justify-center items-start;
 	}
 
 	.topline {
@@ -36,7 +36,7 @@
 	}
 
 	.btns {
-		@apply w-full relative mt-20;
+		@apply absolute right-0 bottom-0;
 
 		button {
 			@apply cursor-none text-[1rem] font-medium text-[#F63030] bg-[#3d535f] px-2 py-1 m-4 tracking-wider capitalize shadow-sm shadow-white;

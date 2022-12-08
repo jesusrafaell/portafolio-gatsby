@@ -66,7 +66,7 @@ function Main() {
 						<span className='topline'>Hello</span>
 						<h1 className='py-5'>
 							{"I'm "}
-							<span ref={textRef}></span>
+							<span className='text-[#F63030]' ref={textRef}></span>
 						</h1>
 						<p>I’m focused on building web applications while learning new technologies.</p>
 						<div className='btns'>

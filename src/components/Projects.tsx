@@ -12,8 +12,8 @@ import reactLogo from '../images/react-logo.svg';
 import nodeLogo from '../images/nodejs-logo.png';
 
 interface Item {
-	img: any;
-	imgTech: any;
+	img: string;
+	imgTech: string;
 	developments: string;
 	title: string;
 	desc: string;
@@ -27,6 +27,8 @@ interface Item {
 			bg: string;
 		};
 	};
+	bgColor?: string;
+	textColor?: string;
 }
 
 const items: Item[] = [
@@ -42,7 +44,7 @@ const items: Item[] = [
 		color: {
 			active: {
 				text: '#fff',
-				bg: '#000',
+				bg: '#f2f2f2',
 			},
 			normal: {
 				text: '#30c9f6',
@@ -62,7 +64,7 @@ const items: Item[] = [
 		color: {
 			active: {
 				text: '#fff',
-				bg: '#000',
+				bg: '#ffe474',
 			},
 			normal: {
 				text: '#30c9f6',
@@ -81,7 +83,7 @@ const items: Item[] = [
 		color: {
 			active: {
 				text: '#fff',
-				bg: '#000',
+				bg: '#ACCDD4',
 			},
 			normal: {
 				text: '#30c9f6',
@@ -101,7 +103,7 @@ const items: Item[] = [
 		color: {
 			active: {
 				text: '#fff',
-				bg: '#000',
+				bg: '#dedede',
 			},
 			normal: {
 				text: '#30c9f6',
@@ -145,7 +147,7 @@ const Projects: React.FC = () => {
 		timeLine.to('.slider', {
 			delay,
 			duration: 0.2,
-			backgroundColor: `${newItem.bgColor}`,
+			backgroundColor: `${newItem.color.active.bg}`,
 		});
 		timeLine
 			.fromTo(
@@ -171,7 +173,7 @@ const Projects: React.FC = () => {
 					duration: 0.7,
 					stagger: 0.15,
 					ease: 'power2.out',
-					color: `${newItem.textColor}`,
+					color: `${newItem.color.active}`,
 				},
 				{
 					x: 0,
