@@ -198,7 +198,7 @@ const Projects: React.FC = () => {
 					y: 0,
 					skewY: 0,
 					opacity: 1,
-					duration: 0.7,
+					duration: 0.5,
 					stagger: 0.15,
 					ease: 'power2.out',
 				}

@@ -30,13 +30,13 @@
 		@apply cursor-none font-gravity-regular;
 	}
 
-	html {
-		@apply overflow-x-hidden;
-	}
-
 	body {
 		@apply bg-[#121417] text-[#ecf0f3] tracking-wide;
-		/*scrollbar-hide;*/
+		-ms-overflow-style: none; /* IE and Edge */
+		scrollbar-width: none; /* Firefox */
+		&::-webkit-scrollbar {
+			display: none;
+		}
 	}
 
 	h1,
@@ -89,6 +89,6 @@
 	}
 
 	section {
-		@apply w-screen h-screen max-h-screen overflow-hidden;
+		@apply w-screen h-screen max-h-screen;
 	}
 }
