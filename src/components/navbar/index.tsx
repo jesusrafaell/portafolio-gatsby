@@ -1,5 +1,4 @@
-import React from 'react';
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-scroll';
 import classNames from '../../utilis/classNames';
 
@@ -63,16 +62,6 @@ const Navbar: React.FC = () => {
 								About
 							</Link>
 						</li>
-						{/* <li>
-							<Link activeClass='active' to='dev' spy smooth offset={0} duration={500} className='nav-item'>
-								Developments
-							</Link>
-						</li> */}
-						{/* <li>
-							<a href='#' className='nav-item' aria-current='page'>
-								Contact
-							</a>
-						</li> */}
 					</ul>
 				</div>
 			</div>
