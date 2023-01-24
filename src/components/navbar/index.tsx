@@ -62,6 +62,11 @@ const Navbar: React.FC = () => {
 								About
 							</Link>
 						</li>
+						<li>
+							<Link activeClass='active' to='threejs' spy smooth offset={0} duration={500} className='nav-item'>
+								Animation
+							</Link>
+						</li>
 					</ul>
 				</div>
 			</div>

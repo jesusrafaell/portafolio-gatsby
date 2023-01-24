@@ -3,6 +3,8 @@ import splash from '../public/images/jinx3.jpg';
 import photo from '../public/images/jesus1.png';
 import { init } from 'ityped';
 import gsap from 'gsap';
+// import TriangleCustom from './threejs/Triangle';
+import { Canvas } from '@react-three/fiber/dist/declarations/src';
 
 function About() {
 	const textRef = useRef(null);
